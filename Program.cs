@@ -47,7 +47,8 @@ namespace HNSW.Net.Demo
             Console.WriteLine("Building spatial index...");
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            world.AddItems(train.Take(100).ToList());   // taking 100 just for testing correctness of the code.
+            // world.AddItems(train.Take(100).ToList());   // taking 100 just for testing correctness of the code.
+            world.AddItems(train.AsReadOnly());
             sw.Stop();
             var elapsedMs = sw.ElapsedMilliseconds;
             Console.WriteLine("Time: {0:0.00} ms", elapsedMs);
