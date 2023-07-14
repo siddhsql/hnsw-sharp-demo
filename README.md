@@ -106,7 +106,7 @@ Screenshots:
 
 ## Conclusion
 
-### Peformance of `hnsw-sharp` vs. `hnswlib`
+### Performance of `hnsw-sharp` vs. `hnswlib`
 
 The `hnsw-sharp` library is many orders of magnitude slower than `hnswlib`. 
 `hnswlib` took only 2 minutes to ingest the training dataset (1M+ vectors) 
@@ -116,7 +116,7 @@ use that as justification to develop a new project in C# (vs. C++).
 I believe the huge difference in performance is due to poor implementation rather
 than using C# vs. C++. C#, of course, cannot match the performance of finely tuned
 C++ code but if we consider the cost/benefit, the small cost C# requires us to pay in 
-terms of cost is more than compensated for what it gives us in terms of benefit. E.g.,
+terms of performance is more than compensated for what it gives us in terms of benefit. E.g.,
 from [here](https://stackoverflow.com/questions/138361/how-much-faster-is-c-than-c):
 
 
